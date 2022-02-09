@@ -13,7 +13,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Obsługiwany układ",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -26,7 +26,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Instrukcja",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -34,8 +34,8 @@
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This is the mobile only instruction text",
+          "title": "Instrukcja w mobilnych",
+          "description": "To jest tekst instrukcji tylko dla mobilnych",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -43,26 +43,26 @@
         },
         "_isTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image",
-          "description": "If enabled, the text area drops below the image instead of being beside it",
+          "title": "Przesuń obszar tekstowy poniżej obrazu",
+          "description": "Jeśli jest włączona, obszar tekstowy opada pod obrazem zamiast być obok niego",
           "default": false
         },
         "_isMobileTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image on mobile",
-          "description": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button",
+          "title": "Przesuń obszar tekstowy poniżej obrazu w telefonie komórkowym",
+          "description": "Jeśli opcja ta jest włączona, na urządzeniach mobilnych obszar tekstowy jest opuszczany poniżej obrazu, zamiast znajdować się za przyciskiem linii prostej.",
           "default": false
         },
         "_hasNavigationInTextArea": {
           "type": "boolean",
-          "title": "Move navigation to text area",
-          "description": "If enabled, all navigation elements will be moved to the text area",
+          "title": "Przenieś nawigację do obszaru tekstowego",
+          "description": "Jeśli jest włączona, wszystkie elementy nawigacyjne zostaną przeniesione do obszaru tekstowego",
           "default": false
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component",
+          "title": "Kryteria ukończenia",
+          "description": "Czy ukończenie jest oparte na tym, że uczący się obejrzał wszystkie elementy narracyjne - czy tylko obejrzał komponent",
           "default": "allItems",
           "enum": [
             "inview",
@@ -72,13 +72,13 @@
         },
         "_items": {
           "type": "array",
-          "title": "Items",
+          "title": "Elementy",
           "items": {
             "type": "object",
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
+                "title": "Tytuł",
                 "description": "",
                 "default": "",
                 "_adapt": {
@@ -87,12 +87,12 @@
               },
               "_ariaLevel": {
                 "type": "number",
-                "title": "Title ARIA level",
+                "title": "Poziom ARIA  tytułu (ARIA level)",
                 "default": 0
               },
               "body": {
                 "type": "string",
-                "title": "Body",
+                "title": "Treść główna",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -101,7 +101,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Grafika",
                 "default": {},
                 "required": [
                   "src"
@@ -110,7 +110,7 @@
                   "src": {
                     "type": "string",
                     "isObjectId": true,
-                    "title": "Source",
+                    "title": "Źródło",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -118,8 +118,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Tekst alternatywny",
+                    "description": "Opis obrazka; wymagany, gdy ma on znaczenie, które musi być przekazane uczącemu się. W przypadku obrazów 'dekoracyjnych' należy pozostawić to pole puste",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -127,8 +127,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution",
+                    "title": "Atrybucja",
+                    "description": "Tekst, który ma być wyświetlany jako atrybut",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -138,7 +138,7 @@
               },
               "strapline": {
                 "type": "string",
-                "title": "Strapline",
+                "title": "Slogan",
                 "default": "",
                 "_adapt": {
                   "translatable": true

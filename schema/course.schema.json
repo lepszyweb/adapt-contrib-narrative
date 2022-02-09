@@ -18,24 +18,24 @@
               "properties": {
                 "ariaRegion": {
                   "type": "string",
-                  "title": "ARIA region",
-                  "default": "Slide show. Select the next button to progress.",
+                  "title": "Region ARIA",
+                  "default": "Pokaz slajdów. Wybierz przycisk Następny, aby przejść dalej.",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "previous": {
                   "type": "string",
-                  "title": "Previous",
-                  "default": "{{#if title}}Back to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
+                  "title": "Poprzedni",
+                  "default": "{{#if title}}Wstecz do {{{title}}} (item {{itemNumber}} z {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "next": {
                   "type": "string",
-                  "title": "Next",
-                  "default": "{{#if title}}Forward to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
+                  "title": "Następny",
+                  "default": "{{#if title}}Naprzód do {{{title}}} (item {{itemNumber}} z {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
                   "_adapt": {
                     "translatable": true
                   }
